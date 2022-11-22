@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<!--- ICS2O-My first PWA --->
+<!--- ICS2O-Unit5-02-JS --->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My first PWA" />
+    <meta name="description" content="Assignment for Unit5-02-JS" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="sam-corbett" />
     <meta name="theme-color" content="#FFFFFF" />
-    <title>GitHub page as PWA template</title>
+    <title>GitHub page for Unit5-02-JS</title>
     <link rel="canonical" href="https://sam-corbett/ICS2O-Unit5-02-JS/" />
     <link rel="manifest" href="/ICS2O-Unit5-02-JS/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -52,19 +52,53 @@
           <span class="mdl-layout-title">My first PWA</span>
         </div>
       </header>
-      <main class="mdl-layout__content">
+    <main class="mdl-layout__content">
         <p></p>
-
+        <p>
+          In this program you may generate a positive or negative number from
+          one to ten by selecting one of the buttons below.
+        </p>
+        <p></p>
         <!-- Raised button with ripple -->
+        <div id="radio-buttons">
+          <label
+            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+            for="flash1"
+          >
+            <input
+              checked
+              class="mdl-radio__button"
+              id="flash1"
+              name="flash"
+              type="radio"
+              value="on"
+            />
+            <span class="mdl-radio__label">Positive</span>
+          </label>
+          <label
+            class="mdl-radio mdl-js-radio mdl-js-ripple-effect"
+            for="flash2"
+          >
+            <input
+              class="mdl-radio__button"
+              id="flash2"
+              name="flash"
+              type="radio"
+              value="off"
+            />
+            <span class="mdl-radio__label">Negative</span>
+          </label>
+        </div>
+        <p></p>
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          Say "Hello, World!"
+          Generate Number
         </button>
         <!-- basic text -->
         <p></p>
-        <div id="hello-world"></div>
+        <div id="radio-button-value"></div>
       </main>
     </div>
   </body>
